@@ -1,12 +1,34 @@
 package com.example.sash.tamilkalvi;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class finaltest extends AppCompatActivity {
+    int finalResult=0;
+    TextView displayResult;
+    EditText playerName;
+    public void MainTest(View view){
+        Intent mainTestIntent=new Intent(this,MainActivity.class);
+        Button button=(Button) findViewById(R.id.testbutton6);
+        startActivity(mainTestIntent);
+    }
 
+    public void submitButton(View view){
+        Intent answer5Intent=getIntent();
+        int answer5final=answer5Intent.getIntExtra("answer5",0);
+        displayResult=(TextView)findViewById(R.id.textViewResult);
+        displayResult.setText("Your final score is   " + answer5final);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

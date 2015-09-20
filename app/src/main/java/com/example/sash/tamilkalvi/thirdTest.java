@@ -9,10 +9,30 @@ import android.view.View;
 import android.widget.Button;
 
 public class thirdTest extends AppCompatActivity {
+    int result=0;
     public void fourthTest(View view){
         Intent thirdTestIntent=new Intent(this,fourthTest.class);
         Button button=(Button) findViewById(R.id.testbutton3);
         startActivity(thirdTestIntent);
+    }
+
+
+    public void AnswerTrue(View view){
+        Intent answer2Intent=getIntent();
+        int result=answer2Intent.getIntExtra("result",0);
+        result=result+1;
+        Intent answer3Intent = new Intent(thirdTest.this,fourthTest.class);
+        answer3Intent.putExtra("result",result);
+        startActivity(answer3Intent);
+    }
+
+    public void AnswerFalse(View view){
+        Intent answer2Intent=getIntent();
+        int result=answer2Intent.getIntExtra("result",0);
+        result=result+0;
+        Intent answer3Intent = new Intent(thirdTest.this,fourthTest.class);
+        answer3Intent.putExtra("result",result);
+        startActivity(answer3Intent);
     }
 
     @Override

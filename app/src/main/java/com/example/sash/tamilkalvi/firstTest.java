@@ -7,14 +7,29 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class firstTest extends AppCompatActivity {
+    int result=0;
     public void secondTest(View view){
         Intent firstTestIntent=new Intent(this,secondTest.class);
         Button button=(Button) findViewById(R.id.testbutton1);
         startActivity(firstTestIntent);
     }
 
+    public void AnswerTrue(View view){
+        result=result+1;
+        Intent answer1Intent = new Intent(firstTest.this,secondTest.class);
+        answer1Intent.putExtra("result",result);
+        startActivity(answer1Intent);
+    }
+
+    public void AnswerFalse(View view){
+        result=result+0;
+        Intent answer1Intent = new Intent(firstTest.this,secondTest.class);
+        answer1Intent.putExtra("result",result);
+        startActivity(answer1Intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

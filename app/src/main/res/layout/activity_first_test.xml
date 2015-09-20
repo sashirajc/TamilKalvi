@@ -30,10 +30,18 @@
     <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/testbutton1"
-            android:layout_alignParentEnd="true"
-            android:layout_marginBottom="73dp"
-        android:id="@+id/radioGroup1">
+        android:id="@+id/radioGroup1"
+        android:layout_above="@+id/testbutton1"
+        android:layout_alignParentEnd="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_gravity="right" />
+
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,6 +56,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="A"
+            android:clickable="true"
+            android:onClick="AnswerFalse"
             android:id="@+id/radioButtonQ1A2"
             android:layout_below="@+id/radioButton"
             android:layout_centerHorizontal="true" />
@@ -57,6 +67,8 @@
             android:layout_height="wrap_content"
             android:text="E"
             android:id="@+id/radioButton3"
+            android:clickable="true"
+            android:onClick="AnswerFalse"
             android:layout_below="@+id/radioButtonQ1A3"
             android:layout_centerHorizontal="true" />
 
@@ -66,6 +78,8 @@
             android:text="Oe"
             android:id="@+id/radioButtonQ1A4"
             android:layout_below="@+id/radioButton3"
+            android:clickable="true"
+            android:onClick="AnswerFalse"
             android:layout_alignStart="@+id/radioButton3" />
     </RadioGroup>
 
@@ -75,6 +89,6 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Pick the correct answer"
         android:id="@+id/textViewTest1"
-        android:layout_above="@+id/radioGroup"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

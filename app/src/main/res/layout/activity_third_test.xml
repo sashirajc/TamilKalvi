@@ -44,6 +44,8 @@
 
         <RadioButton
             android:layout_width="wrap_content"
+            android:clickable="true"
+            android:onClick="AnswerFalse"
             android:layout_height="wrap_content"
             android:text="A"
             android:id="@+id/radioButtonQ3A2"
@@ -56,10 +58,14 @@
             android:text="E"
             android:id="@+id/radioButton3"
             android:layout_below="@+id/radioButtonQ3A3"
+            android:clickable="true"
+            android:onClick="AnswerFalse"
             android:layout_centerHorizontal="true" />
 
         <RadioButton
             android:layout_width="wrap_content"
+            android:clickable="true"
+            android:onClick="AnswerFalse"
             android:layout_height="wrap_content"
             android:text="Oe"
             android:id="@+id/radioButtonQ3A4"

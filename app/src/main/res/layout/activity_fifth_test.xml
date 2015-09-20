@@ -29,13 +29,15 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textViewTest5"
+        android:layout_below="@+id/textViewTest6"
         android:id="@+id/radioGroup5"
         android:layout_alignParentStart="true">
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Oo"
+            android:clickable="true"
+            android:onClick="AnswerFalse"
             android:id="@+id/radioButtonQ5A1"
             android:layout_centerVertical="true"
             android:layout_alignStart="@+id/radioButton2" />
@@ -44,6 +46,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="A"
+            android:clickable="true"
+            android:onClick="AnswerFalse"
             android:id="@+id/radioButtonQ5A2"
             android:layout_below="@+id/radioButton"
             android:layout_centerHorizontal="true" />
@@ -52,6 +56,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="E"
+            android:clickable="true"
+            android:onClick="AnswerFalse"
             android:id="@+id/radioButton3"
             android:layout_below="@+id/radioButtonQ5A3"
             android:layout_centerHorizontal="true" />
@@ -72,7 +78,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Pick the correct answer"
-        android:id="@+id/textViewTest5"
+        android:id="@+id/textViewTest6"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 

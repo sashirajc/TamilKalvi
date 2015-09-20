@@ -9,16 +9,35 @@ import android.view.View;
 import android.widget.Button;
 
 public class fifthTest extends AppCompatActivity {
+    int result=0;
     public void finalTest(View view){
         Intent finalTestIntent=new Intent(this,finaltest.class);
         Button button=(Button) findViewById(R.id.testbutton5);
         startActivity(finalTestIntent);
     }
 
+    public void AnswerTrue(View view){
+        Intent answer4Intent=getIntent();
+        int result=answer4Intent.getIntExtra("result",1);
+        result=result+1;
+        Intent answer5Intent = new Intent(fifthTest.this,finaltest.class);
+        answer5Intent.putExtra("result",result);
+        startActivity(answer5Intent);
+    }
+
+    public void AnswerFalse(View view){
+        Intent answer4Intent=getIntent();
+        int result=answer4Intent.getIntExtra("result",1);
+        result=result+0;
+        Intent answer5Intent = new Intent(fifthTest.this,finaltest.class);
+        answer5Intent.putExtra("result",result);
+        startActivity(answer5Intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fifth_test);
+
     }
 
     @Override
