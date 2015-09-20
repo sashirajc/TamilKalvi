@@ -40,6 +40,38 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.sash.tamilkalvi.MainActivity" />
         </activity>
+        <activity
+            android:name=".firstvowel"
+            android:label="@string/title_activity_firstvowel"
+            android:parentActivityName=".LearnTamil" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.LearnTamil" />
+        </activity>
+        <activity
+            android:name=".secondvowel"
+            android:label="@string/title_activity_secondvowel"
+            android:parentActivityName=".firstvowel" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.firstvowel" />
+        </activity>
+        <activity
+            android:name=".thirdvowel"
+            android:label="@string/title_activity_thirdvowel"
+            android:parentActivityName=".secondvowel" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.secondvowel" />
+        </activity>
+        <activity
+            android:name=".fourthVowel"
+            android:label="@string/title_activity_fourth_vowel"
+            android:parentActivityName=".thirdvowel" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.thirdvowel" />
+        </activity>
     </application>
 
 </manifest>

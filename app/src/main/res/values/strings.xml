@@ -6,4 +6,8 @@
     <string name="title_activity_about_tamil">aboutTamil</string>
     <string name="title_activity_learn_tamil">Tamil Kalvi</string>
     <string name="title_activity_test_tamil">Tamil Kalvi</string>
+    <string name="title_activity_firstvowel">Tamil Kalvi</string>
+    <string name="title_activity_secondvowel">Tamil Kalvi</string>
+    <string name="title_activity_thirdvowel">Tamil Kalvi</string>
+    <string name="title_activity_fourth_vowel">Tamil Kalvi</string>
 </resources>
