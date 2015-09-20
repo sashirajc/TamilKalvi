@@ -34,6 +34,19 @@ public static final String  TAG="Logtag";
         Button button=(Button) findViewById(R.id.whatbutton);
         startActivity(intent);
     }
+
+    public void onClick1(View view){
+        Intent learnintent=new Intent(this,LearnTamil.class);
+        Button button=(Button) findViewById(R.id.learnbutton);
+        startActivity(learnintent);
+    }
+
+    public void onClick3(View view){
+        Intent testintent=new Intent(this,TestTamil.class);
+        Button button=(Button) findViewById(R.id.testbutton);
+        startActivity(testintent);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

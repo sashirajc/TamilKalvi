@@ -24,6 +24,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.sash.tamilkalvi.MainActivity" />
         </activity>
+        <activity
+            android:name=".LearnTamil"
+            android:label="@string/title_activity_learn_tamil"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TestTamil"
+            android:label="@string/title_activity_test_tamil"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

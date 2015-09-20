@@ -12,7 +12,6 @@
         android:textSize="10pt"
         android:textStyle="bold"
         android:textColor="#ffffff"
-        android:layout_marginTop="143dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -21,20 +20,20 @@
         android:layout_height="wrap_content"
         android:text="Learn Tamil"
         android:id="@+id/learnbutton"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true"
         android:clickable="true"
-        android:onClick="onClick1"/>
+        android:onClick="onClick1"
+        android:layout_above="@+id/exitbutton"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="What is Tamil?"
         android:id="@+id/whatbutton"
-        android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true"
         android:clickable="true"
-        android:onClick="onClick2"/>
+        android:onClick="onClick2"
+        android:layout_alignTop="@+id/testbutton"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -44,5 +43,15 @@
         android:clickable="true"
         android:layout_alignParentBottom="true"
         android:layout_toStartOf="@+id/whatbutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Tamil"
+        android:id="@+id/testbutton"
+        android:clickable="true"
+        android:onClick="onClick3"
+        android:layout_above="@+id/exitbutton"
+        android:layout_alignEnd="@+id/exitbutton" />
 
 </RelativeLayout>
