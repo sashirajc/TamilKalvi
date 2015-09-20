@@ -14,7 +14,7 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class finaltest extends AppCompatActivity {
-    int finalResult=0;
+    int finalResult;
     TextView displayResult;
     EditText playerName;
     public void MainTest(View view){
@@ -24,10 +24,11 @@ public class finaltest extends AppCompatActivity {
     }
 
     public void submitButton(View view){
-        Intent answer5Intent=getIntent();
-        int answer5final=answer5Intent.getIntExtra("answer5",0);
+        finalResult=firstTest.result1+secondTest.result2+thirdTest.result3+fourthTest.result4+fifthTest.result5;
+        /*Intent answer5Intent=getIntent();
+        int answer5final=answer5Intent.getIntExtra("answer5",0);*/
         displayResult=(TextView)findViewById(R.id.textViewResult);
-        displayResult.setText("Your final score is   " + answer5final);
+        displayResult.setText("Your final score is   " + finalResult);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {

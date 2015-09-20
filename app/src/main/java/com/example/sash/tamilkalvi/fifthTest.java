@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class fifthTest extends AppCompatActivity {
+    public static int result5;
     int result=0;
     public void finalTest(View view){
         Intent finalTestIntent=new Intent(this,finaltest.class);
@@ -17,12 +18,13 @@ public class fifthTest extends AppCompatActivity {
     }
 
     public void AnswerTrue(View view){
-        Intent answer4Intent=getIntent();
+        result5=1;
+        /*Intent answer4Intent=getIntent();
         int result=answer4Intent.getIntExtra("result",1);
         result=result+1;
         Intent answer5Intent = new Intent(fifthTest.this,finaltest.class);
         answer5Intent.putExtra("result",result);
-        startActivity(answer5Intent);
+        startActivity(answer5Intent);*/
     }
 
     public void AnswerFalse(View view){
@@ -33,6 +35,7 @@ public class fifthTest extends AppCompatActivity {
         answer5Intent.putExtra("result",result);
         startActivity(answer5Intent);
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

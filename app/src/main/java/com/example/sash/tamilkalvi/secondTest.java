@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class secondTest extends AppCompatActivity {
-    int result=0;
+    public static int result2;
     public void thirdTest(View view){
         Intent secondTestIntent=new Intent(this,thirdTest.class);
         Button button=(Button) findViewById(R.id.testbutton2);
@@ -17,12 +17,13 @@ public class secondTest extends AppCompatActivity {
     }
 
     public void AnswerTrue(View view){
-        Intent answer1Intent=getIntent();
+        result2=1;
+        /*Intent answer1Intent=getIntent();
         int result=answer1Intent.getIntExtra("result",0);
         result=result+1;
         Intent answer2Intent = new Intent(secondTest.this,thirdTest.class);
         answer2Intent.putExtra("result",result);
-        startActivity(answer2Intent);
+        startActivity(answer2Intent);*/
     }
 
     public void AnswerFalse(View view){
