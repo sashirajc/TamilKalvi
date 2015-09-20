@@ -72,6 +72,62 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.sash.tamilkalvi.thirdvowel" />
         </activity>
+        <activity
+            android:name=".firstTest"
+            android:label="@string/title_activity_first_test"
+            android:parentActivityName=".TestTamil" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.TestTamil" />
+        </activity>
+        <activity
+            android:name=".fifthvowel"
+            android:label="@string/title_activity_fifthvowel"
+            android:parentActivityName=".fourthVowel" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.fourthVowel" />
+        </activity>
+        <activity
+            android:name=".sixthvowel"
+            android:label="@string/title_activity_sixthvowel"
+            android:parentActivityName=".fifthvowel" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.fifthvowel" />
+        </activity>
+        <activity
+            android:name=".seventhvowel"
+            android:label="@string/title_activity_seventhvowel"
+            android:parentActivityName=".sixthvowel" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.sixthvowel" />
+        </activity>
+        <activity
+            android:name=".eightvowel"
+            android:label="@string/title_activity_eightvowel"
+            android:parentActivityName=".seventhvowel" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.seventhvowel" />
+        </activity>
+        <activity
+            android:name=".ninevowel"
+            android:label="@string/title_activity_ninevowel"
+            android:parentActivityName=".eightvowel" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.eightvowel" />
+        </activity>
+        <activity
+            android:name=".tenvowel"
+            android:label="@string/title_activity_tenvowel"
+            android:parentActivityName=".ninevowel" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.ninevowel" />
+        </activity>
     </application>
 
 </manifest>

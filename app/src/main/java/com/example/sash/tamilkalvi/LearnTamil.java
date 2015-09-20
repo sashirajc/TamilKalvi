@@ -1,12 +1,20 @@
 package com.example.sash.tamilkalvi;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class LearnTamil extends AppCompatActivity {
 
+    public void firstvowel(View view){
+        Intent firstVowelIntent=new Intent(this,firstvowel.class);
+        Button button=(Button) findViewById(R.id.learnbutton1);
+        startActivity(firstVowelIntent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

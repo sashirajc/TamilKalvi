@@ -1,12 +1,19 @@
 package com.example.sash.tamilkalvi;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class fourthVowel extends AppCompatActivity {
-
+    public void fifthvowel(View view){
+        Intent fifthVowelIntent=new Intent(this,fifthvowel.class);
+        Button button=(Button) findViewById(R.id.fourthvowelbutton2);
+        startActivity(fifthVowelIntent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

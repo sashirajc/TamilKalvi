@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#6366ff"
+    tools:context="com.example.sash.tamilkalvi.LearnTamil">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:id="@+id/eightvowelbutton2"
+        android:clickable="true"
+        android:onClick="ninevowel"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView4"
+        android:src="@drawable/aae"
+        android:layout_alignStart="@+id/textViewEightVowel2"
+        android:layout_above="@+id/textViewEightVowel1"
+        android:layout_alignEnd="@+id/textViewEightVowel2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="A"
+        android:id="@+id/textViewEightVowel1"
+        android:textSize="30pt"
+        android:textColor="#FFFFFF"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pronounciation: &apos;a&apos; as in &apos;ate&apos;"
+        android:id="@+id/textViewEightVowel2"
+        android:textSize="10pt"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/textViewEightVowel1"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

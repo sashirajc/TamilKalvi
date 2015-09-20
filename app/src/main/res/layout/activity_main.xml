@@ -22,7 +22,7 @@
         android:id="@+id/learnbutton"
         android:clickable="true"
         android:onClick="onClick1"
-        android:layout_above="@+id/exitbutton"
+        android:layout_above="@+id/testbutton"
         android:layout_alignParentStart="true" />
 
     <Button
@@ -52,6 +52,22 @@
         android:clickable="true"
         android:onClick="onClick3"
         android:layout_above="@+id/exitbutton"
-        android:layout_alignEnd="@+id/exitbutton" />
+        android:layout_alignEnd="@+id/learnbutton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/intropic"
+        android:layout_below="@+id/intro"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High Scores"
+        android:id="@+id/highScoreButton"
+        android:layout_above="@+id/whatbutton"
+        android:layout_alignEnd="@+id/whatbutton" />
 
 </RelativeLayout>

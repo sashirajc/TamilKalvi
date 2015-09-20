@@ -10,4 +10,11 @@
     <string name="title_activity_secondvowel">Tamil Kalvi</string>
     <string name="title_activity_thirdvowel">Tamil Kalvi</string>
     <string name="title_activity_fourth_vowel">Tamil Kalvi</string>
+    <string name="title_activity_first_test">Tamil Kalvi</string>
+    <string name="title_activity_fifthvowel">Tamil Kalvi</string>
+    <string name="title_activity_sixthvowel">Tamil Kalvi</string>
+    <string name="title_activity_seventhvowel">Tamil Kalvi</string>
+    <string name="title_activity_eightvowel">Tamil Kalvi</string>
+    <string name="title_activity_ninevowel">Tamil Kalvi</string>
+    <string name="title_activity_tenvowel">Tamil Kalvi</string>
 </resources>
