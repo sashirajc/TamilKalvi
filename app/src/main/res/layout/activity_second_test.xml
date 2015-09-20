@@ -12,35 +12,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NEXT"
-        android:id="@+id/testbutton1"
+        android:id="@+id/testbutton2"
         android:clickable="true"
-        android:onClick="secondTest"
+        android:onClick="thirdTest"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView21"
-        android:src="@drawable/oo"
-        android:layout_above="@+id/testbutton1"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="218dp" />
+        android:id="@+id/imageView22"
+        android:src="@drawable/a"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/testbutton1"
-            android:layout_alignParentEnd="true"
-            android:layout_marginBottom="73dp"
-        android:id="@+id/radioGroup1">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/testbutton2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="73dp"
+        android:id="@+id/radioGroup2">
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Oo"
-            android:clickable="true"
-            android:onClick="AnswerTrue"
-            android:id="@+id/radioButtonQ1A1"
+            android:text="oo"
+            android:id="@+id/radioButtonQ2A1"
             android:layout_centerVertical="true"
             android:layout_alignStart="@+id/radioButton2" />
 
@@ -48,7 +45,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="A"
-            android:id="@+id/radioButtonQ1A2"
+            android:clickable="true"
+            android:onClick="AnswerTrue"
+            android:id="@+id/radioButtonQ2A2"
             android:layout_below="@+id/radioButton"
             android:layout_centerHorizontal="true" />
 
@@ -57,14 +56,14 @@
             android:layout_height="wrap_content"
             android:text="E"
             android:id="@+id/radioButton3"
-            android:layout_below="@+id/radioButtonQ1A3"
+            android:layout_below="@+id/radioButtonQ2A3"
             android:layout_centerHorizontal="true" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Oe"
-            android:id="@+id/radioButtonQ1A4"
+            android:id="@+id/radioButtonQ2A4"
             android:layout_below="@+id/radioButton3"
             android:layout_alignStart="@+id/radioButton3" />
     </RadioGroup>
@@ -74,7 +73,8 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Pick the correct answer"
-        android:id="@+id/textViewTest1"
-        android:layout_above="@+id/radioGroup"
+        android:id="@+id/textViewTest2"
+        android:layout_above="@+id/radioGroup2"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

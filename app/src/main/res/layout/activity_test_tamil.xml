@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NEXT"
-        android:id="@+id/testbutton1"
+        android:id="@+id/testbutton0"
         android:clickable="true"
         android:onClick="firstTest"
         android:layout_alignParentBottom="true"

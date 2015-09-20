@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="A"
+        android:text="Aae"
         android:id="@+id/textViewEightVowel1"
         android:textSize="30pt"
         android:textColor="#FFFFFF"

@@ -128,6 +128,46 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.sash.tamilkalvi.ninevowel" />
         </activity>
+        <activity
+            android:name=".secondTest"
+            android:label="@string/title_activity_second_test"
+            android:parentActivityName=".firstTest" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.firstTest" />
+        </activity>
+        <activity
+            android:name=".thirdTest"
+            android:label="@string/title_activity_third_test"
+            android:parentActivityName=".secondTest" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.secondTest" />
+        </activity>
+        <activity
+            android:name=".fourthTest"
+            android:label="@string/title_activity_fourth_test"
+            android:parentActivityName=".thirdTest" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.thirdTest" />
+        </activity>
+        <activity
+            android:name=".fifthTest"
+            android:label="@string/title_activity_fifth_test"
+            android:parentActivityName=".fourthTest" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.fourthTest" />
+        </activity>
+        <activity
+            android:name=".finaltest"
+            android:label="@string/title_activity_finaltest"
+            android:parentActivityName=".fifthTest" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.sash.tamilkalvi.fifthTest" />
+        </activity>
     </application>
 
 </manifest>

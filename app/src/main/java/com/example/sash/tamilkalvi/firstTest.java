@@ -1,11 +1,19 @@
 package com.example.sash.tamilkalvi;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class firstTest extends AppCompatActivity {
+    public void secondTest(View view){
+        Intent firstTestIntent=new Intent(this,secondTest.class);
+        Button button=(Button) findViewById(R.id.testbutton1);
+        startActivity(firstTestIntent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

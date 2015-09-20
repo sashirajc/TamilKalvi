@@ -8,23 +8,23 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class tenvowel extends AppCompatActivity {
-    public void mainActivity(View view){
-        Intent homeIntent=new Intent(this,MainActivity.class);
-        Button button=(Button) findViewById(R.id.tenvowelbutton2);
-        startActivity(homeIntent);
+public class thirdTest extends AppCompatActivity {
+    public void fourthTest(View view){
+        Intent thirdTestIntent=new Intent(this,fourthTest.class);
+        Button button=(Button) findViewById(R.id.testbutton3);
+        startActivity(thirdTestIntent);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tenvowel);
+        setContentView(R.layout.activity_third_test);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_tenvowel, menu);
+        getMenuInflater().inflate(R.menu.menu_third_test, menu);
         return true;
     }
 
