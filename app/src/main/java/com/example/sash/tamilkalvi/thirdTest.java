@@ -27,15 +27,6 @@ public class thirdTest extends AppCompatActivity {
         startActivity(answer3Intent);*/
     }
 
-    public void AnswerFalse(View view){
-        Intent answer2Intent=getIntent();
-        int result=answer2Intent.getIntExtra("result",0);
-        result=result+0;
-        Intent answer3Intent = new Intent(thirdTest.this,fourthTest.class);
-        answer3Intent.putExtra("result",result);
-        startActivity(answer3Intent);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

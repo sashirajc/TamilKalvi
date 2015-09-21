@@ -27,14 +27,6 @@ public class fifthTest extends AppCompatActivity {
         startActivity(answer5Intent);*/
     }
 
-    public void AnswerFalse(View view){
-        Intent answer4Intent=getIntent();
-        int result=answer4Intent.getIntExtra("result",1);
-        result=result+0;
-        Intent answer5Intent = new Intent(fifthTest.this,finaltest.class);
-        answer5Intent.putExtra("result",result);
-        startActivity(answer5Intent);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

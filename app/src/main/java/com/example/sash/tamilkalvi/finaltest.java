@@ -1,6 +1,8 @@
 package com.example.sash.tamilkalvi;
 
+import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,6 +19,8 @@ public class finaltest extends AppCompatActivity {
     int finalResult;
     TextView displayResult;
     EditText playerName;
+    DBAdapter db=new DBAdapter(this);
+
     public void MainTest(View view){
         Intent mainTestIntent=new Intent(this,MainActivity.class);
         Button button=(Button) findViewById(R.id.testbutton6);
@@ -29,6 +33,13 @@ public class finaltest extends AppCompatActivity {
         int answer5final=answer5Intent.getIntExtra("answer5",0);*/
         displayResult=(TextView)findViewById(R.id.textViewResult);
         displayResult.setText("Your final score is   " + finalResult);
+        EditText nametxt=(EditText)findViewById(R.id.editText);
+/*
+        SQLiteDatabase scorecard = SQLiteDatabase.openOrCreateDatabase("scorecard",MODE_PRIVATE,null);
+
+        scorecard = new DBAdapter(Context);
+
+*/
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {

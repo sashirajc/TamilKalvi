@@ -26,11 +26,7 @@ public class firstTest extends AppCompatActivity {
         startActivity(answer1Intent);*/
     }
 
-    public void AnswerFalse(View view){
-        Intent answer1Intent = new Intent(firstTest.this,secondTest.class);
-        answer1Intent.putExtra("result",0);
-        startActivity(answer1Intent);
-    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
