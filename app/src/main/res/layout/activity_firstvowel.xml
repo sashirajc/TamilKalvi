@@ -46,4 +46,5 @@
         android:textColor="#FFFFFF"
         android:layout_below="@+id/textViewFirstVowel1"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

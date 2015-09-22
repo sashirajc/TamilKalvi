@@ -11,14 +11,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="What is Tamil?                             Tamil is a Dravidian language spoken predominantly by Tamil people of Tamil Nadu and Sri Lanka. It is widely spoken in India,Sri Lanka, Malaysia and Singapore. Tamil people have been credited with bringing hinduism to South East Asia and influencing South East Asian history for several centuries."
+        android:text="What is Tamil?                             Tamil is a Dravidian language spoken predominantly by Tamil people of Tamil Nadu,India,Malaysia,Singapore and Sri Lanka."
         android:id="@+id/textView"
+        android:textColor="#FFFFFF"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Tamil is interesting and exciting to learn as it brings a rich culture and heritage along with it. In this app the basics of tamil alphabets will be taught. You can learn tamil alphabets and test your knowledge on tamil alphabets."
         android:id="@+id/textView1"

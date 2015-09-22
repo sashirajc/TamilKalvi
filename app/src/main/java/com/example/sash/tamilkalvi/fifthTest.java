@@ -19,20 +19,12 @@ public class fifthTest extends AppCompatActivity {
 
     public void AnswerTrue(View view){
         result5=1;
-        /*Intent answer4Intent=getIntent();
-        int result=answer4Intent.getIntExtra("result",1);
-        result=result+1;
-        Intent answer5Intent = new Intent(fifthTest.this,finaltest.class);
-        answer5Intent.putExtra("result",result);
-        startActivity(answer5Intent);*/
     }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fifth_test);
-
     }
 
     @Override

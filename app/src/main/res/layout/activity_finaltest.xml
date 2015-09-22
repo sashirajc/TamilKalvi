@@ -15,8 +15,9 @@
         android:id="@+id/testbutton6"
         android:clickable="true"
         android:onClick="MainTest"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignTop="@+id/submitbutton"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,19 +26,7 @@
         android:text="Congratulations on finishing the test"
         android:textColor="#FFFFFF"
         android:id="@+id/textViewTest6"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Your score is:"
-        android:id="@+id/textViewResult"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="66dp"
-        android:layout_below="@+id/submitbutton"
-        android:layout_alignEnd="@+id/submitbutton" />
+        android:layout_alignParentTop="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -46,18 +35,38 @@
         android:text="Enter name:"
         android:id="@+id/textView2"
         android:layout_below="@+id/textViewTest6"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="54dp" />
+        android:layout_marginTop="71dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
         android:text=""
         android:ems="10"
         android:id="@+id/editText"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_alignEnd="@+id/textViewTest6" />
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginLeft="71dp"
+        android:layout_marginStart="71dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your score is:"
+        android:id="@+id/textViewResult"
+        android:textColor="#FFFFFF"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/testbutton6"
+        android:layout_toLeftOf="@+id/testbutton6" />
+
+
+
+
 
     <Button
         android:layout_width="wrap_content"
@@ -66,7 +75,8 @@
         android:id="@+id/submitbutton"
         android:clickable="true"
         android:onClick="submitButton"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
 
 </RelativeLayout>

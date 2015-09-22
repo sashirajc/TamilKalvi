@@ -16,10 +16,9 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class finaltest extends AppCompatActivity {
-    int finalResult;
     TextView displayResult;
-    EditText playerName;
-    DBAdapter db=new DBAdapter(this);
+    public static String playerName;
+    public static int finalResult;
 
     public void MainTest(View view){
         Intent mainTestIntent=new Intent(this,MainActivity.class);
@@ -29,17 +28,10 @@ public class finaltest extends AppCompatActivity {
 
     public void submitButton(View view){
         finalResult=firstTest.result1+secondTest.result2+thirdTest.result3+fourthTest.result4+fifthTest.result5;
-        /*Intent answer5Intent=getIntent();
-        int answer5final=answer5Intent.getIntExtra("answer5",0);*/
         displayResult=(TextView)findViewById(R.id.textViewResult);
         displayResult.setText("Your final score is   " + finalResult);
-        EditText nametxt=(EditText)findViewById(R.id.editText);
-/*
-        SQLiteDatabase scorecard = SQLiteDatabase.openOrCreateDatabase("scorecard",MODE_PRIVATE,null);
+        EditText playerName=(EditText)findViewById(R.id.editText);
 
-        scorecard = new DBAdapter(Context);
-
-*/
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
